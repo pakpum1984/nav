@@ -217,7 +217,6 @@ section{
       <label class="logo">ระบบจองรถ</label>
           <ul>
             <li class="text-start"style="font-size:20px;">เลือกรายการ</li>
-             <!-- <li id="bt1">+<a>หน้าหลัก</a></li> -->
             <li id="bt1">+<a>จองรถNo.9</a></li>
             <li id="bt2">+<a>จองรถฝากงาน</a></li>
             <li id="bt3">+<a>จองรถขับเอง</a></li>
@@ -273,7 +272,7 @@ section{
         document.getElementById('bt2').addEventListener('click',()=>{
           event.preventDefault()
         document.getElementById('p2').style.display='block'
-        //document.getElementById('p1').style.display='none'
+        document.getElementById('p1').style.display='none'
         document.getElementById('p3').style.display='none'
         document.getElementById('p4').style.display='none'
         document.getElementById('check').click()
@@ -283,7 +282,7 @@ section{
            event.preventDefault()
         document.getElementById('p3').style.display='block'
         document.getElementById('p2').style.display='none'
-        //document.getElementById('p1').style.display='none'
+        document.getElementById('p1').style.display='none'
         document.getElementById('p4').style.display='none'
          document.getElementById('check').click()
          })
@@ -293,7 +292,7 @@ section{
         document.getElementById('p4').style.display='block'
         document.getElementById('p3').style.display='none'
         document.getElementById('p2').style.display='none'
-        //document.getElementById('p1').style.display='none'
+        document.getElementById('p1').style.display='none'
         document.getElementById('check').click()
         })
       </script>
@@ -303,7 +302,7 @@ $(window).on('load', function(){
   setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
 });
 function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(100, function() {
+    $( "#loadingDiv" ).fadeOut(200, function() {
       // fadeOut complete. Remove the loading div
       $( "#loadingDiv" ).remove(); //makes page more lightweight 
   });  
