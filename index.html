@@ -298,10 +298,10 @@ section{
        <script>
       $('body').append('<div style="" id="loadingDiv"><div class="loader">กำลังโหลดกรุณารอสักครู่.....</div>');
 $(window).on('load', function(){
-  setTimeout(removeLoader, 5000); //wait for page load PLUS two seconds.
+  setTimeout(removeLoader, 1000); //wait for page load PLUS two seconds.
 });
 function removeLoader(){
-    $( "#loadingDiv" ).fadeOut(200, function() {
+    $( "#loadingDiv" ).fadeOut(100, function() {
       // fadeOut complete. Remove the loading div
       $( "#loadingDiv" ).remove(); //makes page more lightweight 
   });  
